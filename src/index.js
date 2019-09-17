@@ -18,6 +18,8 @@ import weatherApp from './reducers';
 
 import WeatherPage from './containers/WeatherPage';
 
+import './icons/css/weather-icons.css';
+
 const logger = createLogger();
 const store = createStore(weatherApp, applyMiddleware(thunk, logger));
 
