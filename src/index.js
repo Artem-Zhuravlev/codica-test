@@ -8,7 +8,7 @@ import thunk from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import { AppContainer } from 'react-hot-loader';
 
-import App from './api/App/App';
+import App from './components/App/App';
 import 'antd/dist/antd.css';
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
