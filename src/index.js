@@ -16,6 +16,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { addLocationAndFetchWeather } from './actions';
 import weatherApp from './reducers';
 
+import WeatherPage from './containers/WeatherPage';
+
 const logger = createLogger();
 const store = createStore(weatherApp, applyMiddleware(thunk, logger));
 
@@ -27,6 +29,7 @@ ReactDOM.render(
         <Provider store={store}>
             <Router >
                 <Route exact path="/" component={App} />
+                <Route path='/:name' component={WeatherPage} />
             </Router>
         </Provider>
     </AppContainer>, 
