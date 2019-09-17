@@ -13,8 +13,14 @@ import 'antd/dist/antd.css';
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import { addLocationAndFetchWeather } from './actions';
+import weatherApp from './reducers';
+
 const logger = createLogger();
-const store = createStore(applyMiddleware(thunk, logger));
+const store = createStore(weatherApp, applyMiddleware(thunk, logger));
+
+['Kharkiv','Kyiv','Odessa','Lviv', 'London', 'Boston']
+    .forEach((city) => store.dispatch(addLocationAndFetchWeather(city)));
 
 ReactDOM.render(
     <AppContainer>
