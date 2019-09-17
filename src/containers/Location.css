@@ -1,0 +1,43 @@
+.list__title{
+    font-size: 20px;
+}
+.list__refresh{
+    background-color: #e4c0c0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    transition: .4s;
+    border-radius: 3px;
+}
+.list__refresh:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.list__delete{
+    margin-left: 5px;
+    background-color: #f57f7f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    transition: .4s;
+    border-radius: 3px;
+}
+.list__delete:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.list__contolls{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
